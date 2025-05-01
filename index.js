@@ -426,7 +426,7 @@ Wrap up the call with:
     const ULTRAVOX_CALL_CONFIG = {
         systemPrompt: systemPrompt,
         model: 'fixie-ai/ultravox-70B',
-        voice: 'b0e6b5c1-3100-44d5-8578-9015aa3023ae',
+        voice: '91fa9bcf-93c8-467c-8b29-973720e3f167',
         temperature: 0.4,
         firstSpeaker: "FIRST_SPEAKER_USER",
         medium: { "twilio": {} },
