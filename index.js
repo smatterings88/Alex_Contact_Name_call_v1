@@ -334,7 +334,7 @@ If given a general inbox:
 
 “Thanks — I’ll send it there for now. May I also include the name of the person who oversees that area, just so I can personalize the message?”
 
-Wrap up the call with:
+Confirm that you have the right name and email and ask who it is you are speaking with. Then wrap up the call with:
 
 “Thanks so much for your time and help — I’ll send that over shortly. Wishing you a wonderful day!”
 
