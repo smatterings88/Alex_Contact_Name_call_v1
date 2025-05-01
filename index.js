@@ -518,7 +518,7 @@ app.post('/call-status', async (req, res) => {
             try {
                 const tag = encodeURIComponent('events → ve0525flash-call-busy');
                 const formattedPhone = formatPhoneNumberForTagging(phoneNumber || to);
-                const tagUrl = `https://tag-ghl-danella.onrender.com/api/contacts?clientName=${encodeURIComponent(clientName)}&phoneNumber=${formattedPhone}&tag=${tag}`;
+                const tagUrl = `https://set-ghl-tag-alexlistens.onrender.com/api/contacts?clientName=${encodeURIComponent(clientName)}&phoneNumber=${formattedPhone}&tag=${tag}`;
                 
                 console.log('Tagging busy contact with URL:', tagUrl);
                 
