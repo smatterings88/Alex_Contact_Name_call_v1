@@ -516,7 +516,7 @@ app.post('/call-status', async (req, res) => {
         case 'busy':
             console.log(`Call ${callSid} was busy`);
             try {
-                const tag = encodeURIComponent('events → ve0525flash-call-busy');
+                const tag = encodeURIComponent('call-busy');
                 const formattedPhone = formatPhoneNumberForTagging(phoneNumber || to);
                 const tagUrl = `https://set-ghl-tag-alexlistens.onrender.com/api/contacts?clientName=${encodeURIComponent(clientName)}&phoneNumber=${formattedPhone}&tag=${tag}`;
                 
@@ -535,9 +535,9 @@ app.post('/call-status', async (req, res) => {
         case 'no-answer':
             console.log(`Call ${callSid} was not answered`);
             try {
-                const tag = encodeURIComponent('events → ve0525flash-call-no-answer');
+                const tag = encodeURIComponent('no-answer');
                 const formattedPhone = formatPhoneNumberForTagging(phoneNumber || to);
-                const tagUrl = `https://tag-ghl-danella.onrender.com/api/contacts?clientName=${encodeURIComponent(clientName)}&phoneNumber=${formattedPhone}&tag=${tag}`;
+                const tagUrl = `https://set-ghl-tag-alexlistens.onrender.com/api/contacts?clientName=${encodeURIComponent(clientName)}&phoneNumber=${formattedPhone}&tag=${tag}`;
                 
                 console.log('Tagging no-answer contact with URL:', tagUrl);
                 
